@@ -1,0 +1,54 @@
+mysql -u USERNAME -pPASSWORD -h HOSTNAMEORIP DATABASENAME 
+mysql -u root -pManos1231! -h 127.0.0.1  
+
+
+/*
+comments
+*/
+
+-- comments--
+
+show databases;
+
+create database database_name;
+
+show tables;
+
+describe table_name;
+
+CREATE TABLE table_name (
+    column1 int NOT NULL AUTO_INCREMENT,
+    column2 datatype,
+    column3 datatype,
+   ....
+   PRIMARY KEY (column_x)
+   CONSTRAINT FK_Name FOREIGN KEY (column_y) REFERENCES Table_2(column_z)
+);
+
+ALTER TABLE Table_1 DROP FOREIGN KEY FK_Name;
+
+ALTER TABLE table_name ADD PRIMARY KEY (ID);
+
+ALTER TABLE Table_1 ADD NameOfForeignKey Typeof AFTER Column_x; 
+ALTER TABLE Table_1 ADD FOREIGN KEY (column_y) REFERENCES Table_2(column_z);
+
+
+
+INSERT INTO singer (SINGER_ID, Name, Age, Num_People, Origin_Country, First_Appearance) VALUES (1, 'Paul', 39, 1, 'USA', 2017);
+
+INSERT INTO table_name
+  ( Column1, Column2, Column3, ... )
+VALUES
+  ('John', 123, 'Lloyds Office'), 
+  ('Jane', 124, 'Lloyds Office'), 
+  ('Billy', 125, 'London Office'),
+  ('Miranda', 126, 'Bristol Office');
+
+CREATE TABLE Singer (
+    SINGER_ID SMALLINT(5),
+    Name CHAR(30),
+    Age TINYINT(3),
+    Num_People TINYINT(2),
+    Origin_Country CHAR(15),
+    First_Appearance SMALLINT(4)
+);
