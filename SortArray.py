@@ -54,7 +54,7 @@ print("***********************")
 b=np.array([[1,2,3,4],[9,10,11,12]])
 #m=r_a_1.reshape(2,4,6,5)
 np.random.seed(0)
-mat1=np.random.randint(10,,size=(5,3))
+mat1=np.random.randint(10,size=(5,3))
 
 print(m)
 
